@@ -66,6 +66,7 @@ namespace Microsoft.Tools.WindowsDevicePortal
         // See https://social.msdn.microsoft.com/Forums/en-US/ff098248-551c-4da9-8ba5-358a9f8ccc57/how-do-i-enable-useunsafeheaderparsing-from-code-net-20?forum=netfxnetcom
         private static bool ToggleAllowUnsafeHeaderParsing(bool enable)
         {
+#if false
             Type settingsSectionType = Assembly.GetAssembly(typeof(System.Net.Configuration.SettingsSection))?.GetType("System.Net.Configuration.SettingsSectionInternal");
             if (settingsSectionType == null) { return false; }
 
@@ -76,8 +77,9 @@ namespace Microsoft.Tools.WindowsDevicePortal
             if (aUseUnsafeHeaderParsing == null) { return false; }
 
             aUseUnsafeHeaderParsing.SetValue(anInstance, enable);
-
             return true;
+#endif
+            return false;
         }
 
         /// <summary>

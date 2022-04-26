@@ -28,10 +28,10 @@ namespace Microsoft.Tools.WindowsDevicePortal
             HttpResponseMessage response = null;
             try
             {
-                WebRequestHandler handler = new WebRequestHandler();
+                HttpClientHandler handler = new HttpClientHandler();
                 handler.UseDefaultCredentials = false;
                 handler.Credentials = this.deviceConnection.Credentials;
-                handler.ServerCertificateValidationCallback = this.ServerCertificateValidation;
+                handler.ServerCertificateCustomValidationCallback = this.ServerCertificateValidation;
 
                 client = new HttpClient(handler);
                 this.ApplyHttpHeaders(client, HttpMethods.Get);

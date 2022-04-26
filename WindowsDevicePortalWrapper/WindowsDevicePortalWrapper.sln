@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26403.0
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32414.318
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsDevicePortalWrapper", "WindowsDevicePortalWrapper\WindowsDevicePortalWrapper.csproj", "{6A9E862E-5CDA-4A8A-BBC0-56E9EA921E39}"
 EndProject
@@ -34,9 +34,8 @@ EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		WindowsDevicePortalWrapper.Shared\WindowsDevicePortalWrapper.Shared.projitems*{4fc7c762-adbe-4a0a-882d-10771cd8bd55}*SharedItemsImports = 4
-		WindowsDevicePortalWrapper.Shared\WindowsDevicePortalWrapper.Shared.projitems*{6a9e862e-5cda-4a8a-bbc0-56e9ea921e39}*SharedItemsImports = 4
+		WindowsDevicePortalWrapper.Shared\WindowsDevicePortalWrapper.Shared.projitems*{6a9e862e-5cda-4a8a-bbc0-56e9ea921e39}*SharedItemsImports = 5
 		WindowsDevicePortalWrapper.Shared\WindowsDevicePortalWrapper.Shared.projitems*{af72a46d-5d30-4fb4-8d3e-b516ed19f9a4}*SharedItemsImports = 13
-		WindowsDevicePortalWrapper.Shared\WindowsDevicePortalWrapper.Shared.projitems*{f2d8b145-a737-494e-aef4-508f9d02e0d7}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -179,5 +178,8 @@ Global
 		{E605CD33-1B19-4091-9BD2-289D3CA4729E} = {07E3DB19-3DDB-42EF-BDAB-0A61F07D637C}
 		{1F3CA46B-1E52-418E-A293-23F3FA3BD213} = {07E3DB19-3DDB-42EF-BDAB-0A61F07D637C}
 		{7E0481EB-514A-4292-AD1D-3A3EAF38D359} = {07E3DB19-3DDB-42EF-BDAB-0A61F07D637C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2AA88470-7801-454A-BE28-CD8F87D82898}
 	EndGlobalSection
 EndGlobal
