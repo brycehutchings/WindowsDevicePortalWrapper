@@ -1,3 +1,5 @@
+> :warning: This is a fork of https://github.com/Microsoft/WindowsDevicePortalWrapper/ with the core library ported to .NET Core 3.1 for use with Unreal Engine 5.0. Other test and tool projects in this repository have not been ported and will not build.
+
 # WindowsDevicePortalWrapper
 A client library that wraps the [Windows Device Portal](https://msdn.microsoft.com/windows/uwp/debug-test-perf/device-portal) REST APIs.
 
