@@ -7,9 +7,12 @@
     <StyleCopTargetsDir>$(registry:HKEY_LOCAL_MACHINE\Software\CodePlex\StyleCop@TargetsDir)</StyleCopTargetsDir>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
+  <PropertyGroup>
+    <!-- Some consumers of this library use pdbcopy which does not support portable format -->
+    <DebugType>pdbonly</DebugType>
+  </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DocumentationFile>bin\Release\WindowsDevicePortalWrapper.xml</DocumentationFile>
-    <DebugType>pdbonly</DebugType>
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <PropertyGroup>
